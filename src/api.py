@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-model = joblib.load('https://github.com/Deusdedit99/mandacaru.dev-api/blob/da6293f25686157664b85509d9c5e80a13b34e46/src/modelo_treinado.joblib')
-vectorizer = joblib.load('https://github.com/Deusdedit99/mandacaru.dev-api/blob/f53c26c77412dc9be5b78d796670e5fedf1d9866/src/vectorizer.joblib')
+model = joblib.load('modelo_treinado.joblib')
+vectorizer = joblib.load('vectorizer.joblib')
 
 app = Flask(__name__)
 
