@@ -7,7 +7,7 @@ vectorizer = joblib.load('vectorizer.joblib')
 
 app = Flask(__name__)
 
-@app.route('/classificar', methods=['POST'])
+@app.route('/', methods=['POST'])
 def classificar():
     # Obter os dados da requisição
     data = request.get_json()
